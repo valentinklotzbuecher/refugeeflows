@@ -1,0 +1,61 @@
+project:
+  type: manuscript
+
+manuscript:
+  article: index.qmd
+
+format:
+  html:
+    comments:
+      hypothesis: true
+    theme:
+      light: sandstone
+      dark: superhero
+    fontsize: 1.2em
+    linestretch: 1.7
+    code-fold: true
+    code-summary: "Show code"
+    code-overflow: wrap
+    code-tools:
+      source: repo
+  pdf:
+    papersize: a4
+    documentclass: scrreprt
+    toc: true
+    toc-depth: 3
+    toc-title: "Table of contents"
+    lof: false
+    lot: false
+    number-sections: true
+    number-depth: 2
+    geometry:
+      - inner=1.5cm
+      - outer=1.5cm
+      - top=1.5cm
+      - bottom=1cm
+      - headsep=22pt
+      - headheight=11pt
+      - footskip=33pt
+      - ignorehead
+      - ignorefoot
+      - heightrounded
+    mainfont: "Times New Roman"
+    sansfont: "Arial"
+    monofont: "Courier New"
+    include-in-header: include-in-header.tex
+    template-partials:
+        - before-body.tex
+    highlight-style: ayu
+    code-tools: true
+    code-block-bg: true
+    code-block-border-left: "#31BAE9"
+
+  # (other formats)
+  # pdf: default
+
+execute:
+  freeze: auto
+  cache: true
+
+
+

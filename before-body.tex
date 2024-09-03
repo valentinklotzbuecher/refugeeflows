@@ -1,0 +1,31 @@
+$if(has-frontmatter)$
+\frontmatter
+$endif$
+$if(title)$
+\cleardoublepage
+\thispagestyle{empty}
+{\centering
+%{\Huge \textsc{albert-ludwigs-universit\"{a}t freiburg}}\\[0.35cm]
+\hrule
+\hbox{}\vspace{25ex}
+{\Huge\bfseries $title$ \par}
+$if(subtitle)$
+\vspace{3ex}
+{\Large\bfseries $subtitle$ \par}
+$endif$
+\vspace{12ex}
+$for(by-author)$
+{\Large\bfseries $by-author.name.literal$ \par}
+\vspace{3ex}
+$for(by-author.affiliations)$%
+$if(it.department)$%
+{\bfseries\large $it.department$ \par}
+\vspace{3ex}
+$endif$%
+{\bfseries\large $it.name$ \par}
+$endfor$$endfor$%
+\vspace{5ex}
+{\bfseries\large $date$ \par}
+\vspace{13ex}
+}
+$endif$

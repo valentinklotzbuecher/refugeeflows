@@ -1,0 +1,53 @@
+---
+title: "Refugee Migration and the Causal Effect of Foreign Aid"
+subtitle: "A Replication Study of Dreher et al. (*European Economic Review*, 2019)"
+authors: 
+  - name: "Lukas Grimbach"
+    affiliations:
+      - ref: ind
+  - name: "Valentin Klotzbücher"
+    orcid: 0000-0001-9382-6757
+    email: "valentin.klotzbuecher@econ.uni-freiburg.de"
+    corresponding: true
+    affiliations:
+      - ref: uf
+  - name: "Tim Krieger"
+    orcid: 0000-0003-0045-9172
+    affiliations:
+      - ref: uf
+      - ref: cesifo
+affiliations:
+   - id: ind 
+     name: "Independent researcher" 
+   - id: uf 
+     name: "University of Freiburg" 
+   - id: cesifo
+     name: "CESifo" 
+date: last-modified
+date-format: long
+bibliography: "references.bib"
+csl: "the-quarterly-journal-of-economics.csl"
+link-citations: true
+format: 
+  html:
+    execute:
+      echo: false
+      error: false
+      warning: false
+  pdf:
+    execute:
+      echo: false
+      error: false
+      warning: false
+---
+
+## Introduction
+
+We reconsider the study of @Dreher2019, extending the recent reproduction by @Shaver2024
+
+
+
+
+
+
+
